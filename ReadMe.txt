@@ -1,31 +1,11 @@
 ====================================
 Before starting:
 ====================================
-(1) The methods and code are described in Ghamarian & Marquis, Hierarchical Density-Based Cluster Analysis Framework for Atom Probe Tomography Data, Ultramicroscopy, 2019. 
+(1) The methods and code are described in Ghamarian & Marquis, Hierarchical Density-Based Cluster Analysis Framework for Atom Probe Tomography Data, Ultramicroscopy, 2019. https://doi.org/10.1016/j.ultramic.2019.01.011
 
 (2) As many other cluster finding algorithms, the answer might depend on the parameter value selection. We suggest that the user become familiar with the selection of parameter values by simulating clusters microstructures and evaluating parameters values for optimal selection.
 
 (3) We tested the code for volumes containing up to 526000 atoms of interest, on a MAC MacBook Pro (specificity of the computer in terms of speed and memory). We found the code to unreliably work on Windows and the performance has not been tested on Linux. 
-
-====================================
-To GENERATE a dataset:
-====================================
-(1) Open Main_DataSetGenerator.m in MATLAB and change the parameters before "%----------------------"
-(2) Run the code 
-(3) Open the GeneratedDatasetResults folder. The file used for cluster analysis is 
-YOURFILE_DatasetForClusterAnalysis.txt. 
-
-Some other files are also prepared to provide more information about the generated dataset.
-
-YOURFILE_DatasetForClusterAnalysis.txt: You can open this file in the IVAS software. Use the 
-
-YOURFILE_GnrtdClstrCntrAndSize.txt: The first three columns of this file are X, Y and Z of the cluster centers. The last column is the size of each cluster.
-
-YOURFILE_CuAtomsInClusterandSolidSolution.txt: The first three columns are X, Y and Z of each atom inside the dataset. The fourth column shows the element ID for each atom. We considered 63 for Cu atoms inside a cluster and 65 for Cu atoms in a matrix. The fifth column shows the the cluster ID. We assigned -1 to atoms inside the matrix.
-
-YOURFILE_ParamtersUsedForDatasetGeneration.txt: You can find the paramters used for the cluster analysis here. 
-
-YOURFILE_GnrtdClstrCntrAndSize.txt and YOURFILE_CuAtomsInClusterandSolidSolution.txt will be used in post processing of the cluster analysis results.
 
 ====================================
 INSTALLATION of Python and required packages :
@@ -186,3 +166,22 @@ clusterer = hdbscan.HDBSCAN(min_cluster_size=MinClusterSize,min_samples=MinSampl
 In MAC:
 clusterer = hdbscan.HDBSCAN(min_cluster_size=MinClusterSize,min_samples=MinSamples,
                             cluster_selection_method='eom',approx_min_span_tree=False).fit(X)
+			    
+====================================
+To GENERATE a dataset:
+====================================
+(1) Open Main_DataSetGenerator.m in MATLAB and change the parameters before "%----------------------"
+(2) Run the code 
+(3) Open the GeneratedDatasetResults folder. The file used for cluster analysis is YOURFILE_DatasetForClusterAnalysis.txt. 
+
+Some other files are also prepared to provide more information about the generated dataset.
+
+YOURFILE_DatasetForClusterAnalysis.pos: You can open this file in the IVAS software. 
+
+YOURFILE_GnrtdClstrCntrAndSize.txt: The first three columns of this file are X, Y and Z of the cluster centers. The last column is the size of each cluster.
+
+YOURFILE_CuAtomsInClusterandSolidSolution.txt: The first three columns are X, Y and Z of each atom inside the dataset. The fourth column shows the element ID for each atom. We considered 63 for Cu atoms inside a cluster and 65 for Cu atoms in a matrix. The fifth column shows the the cluster ID. We assigned -1 to atoms inside the matrix.
+
+YOURFILE_ParamtersUsedForDatasetGeneration.txt: You can find the paramters used for the cluster analysis here. 
+
+YOURFILE_GnrtdClstrCntrAndSize.txt and YOURFILE_CuAtomsInClusterandSolidSolution.txt will be used in post processing of the cluster analysis results.
