@@ -1,0 +1,12 @@
+    DatasetName:	Iman_DatasetForClusterAnalysis.txt
+                ShrinkPosFile=false
+          CuCencentrationInSS=0.100000
+There is no gradient in the composition of Cu in matrix
+     CuConcentrationInCluster=0.300000
+100 of the atoms have the radius of 1.1 (nm) and the radius uncertainity of 0.1 (nm)
+69 of the atoms have the radius of 1.5 (nm) and the radius uncertainity of 0.1 (nm)
+                  dseparation=6.000000
+          Detection fficiency=0.370000
+             Lattice constant=0.351500
+  Delocalization parameter, m=0.351500
+  Delocalization parameter, b=0.000000
