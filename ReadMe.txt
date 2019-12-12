@@ -8,6 +8,13 @@ Before starting:
 (3) We tested the code for volumes containing up to 526000 atoms of interest, on a MAC MacBook Pro (specificity of the computer in terms of speed and memory). We found the code to unreliably work on Windows and the performance has not been tested on Linux. 
 
 ====================================
+Citations:
+====================================
+
+When using the code in your publications, please cite the code: 10.5281/zenodo.3572572
+and article: https://doi.org/10.1016/j.ultramic.2019.01.011
+
+====================================
 INSTALLATION of Python and required packages :
 ====================================
 -------
