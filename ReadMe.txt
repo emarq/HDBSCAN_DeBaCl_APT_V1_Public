@@ -11,7 +11,7 @@ Before starting:
 Citations:
 ====================================
 
-When using the code in your publications, please cite the code: 10.5281/zenodo.3572572
+When using the code in your publications, please cite the code: https://zenodo.org/badge/latestdoi/171958367 
 and article: https://doi.org/10.1016/j.ultramic.2019.01.011
 
 ====================================
