@@ -1,4 +1,10 @@
 ====================================
+Citations:
+====================================
+
+When using the code in your publications, please cite the code (DOI: 10.5281/zenodo.3572572) and article (DOI: 10.1016/j.ultramic.2019.01.011)
+
+====================================
 Before starting:
 ====================================
 (1) The methods and code are described in Ghamarian & Marquis, Hierarchical Density-Based Cluster Analysis Framework for Atom Probe Tomography Data, Ultramicroscopy, 2019. https://doi.org/10.1016/j.ultramic.2019.01.011
@@ -6,13 +12,6 @@ Before starting:
 (2) As many other cluster finding algorithms, the answer might depend on the parameter value selection. We suggest that the user become familiar with the selection of parameter values by simulating clusters microstructures and evaluating parameters values for optimal selection.
 
 (3) We tested the code for volumes containing up to 526000 atoms of interest, on a MAC MacBook Pro (specificity of the computer in terms of speed and memory). We found the code to unreliably work on Windows and the performance has not been tested on Linux. 
-
-====================================
-Citations:
-====================================
-
-When using the code in your publications, please cite the code: https://zenodo.org/badge/latestdoi/171958367 
-and article: https://doi.org/10.1016/j.ultramic.2019.01.011
 
 ====================================
 INSTALLATION of Python and required packages :
